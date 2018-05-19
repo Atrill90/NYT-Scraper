@@ -6,13 +6,11 @@ module.exports = {
         res.render("index/index");
     },
     displayArticles:(req,res)=>{
-        scraper();
-    // },
-    // saveArticle:(req,res)=>{
-
-    // },
-    // saveNote:(req,res) =>{
-
+         scraper.scraper().then(data=>{
+            res.render("index/index", {
+                articles: data
+            });
+         });     
     }
 };
 
