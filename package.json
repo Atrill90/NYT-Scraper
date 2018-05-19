@@ -1,0 +1,19 @@
+{
+  "name": "nyt-scraper",
+  "version": "1.0.0",
+  "description": "scraper for New York Times",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atrill90/NYT-Scraper.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atrill90/NYT-Scraper/issues"
+  },
+  "homepage": "https://github.com/Atrill90/NYT-Scraper#readme"
+}
