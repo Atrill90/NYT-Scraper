@@ -11,7 +11,7 @@ const cheerio = require("cheerio");
 
 //Require routes
 const index = require("./routes/index/index");
-
+const getArticle = require("./routes/getArticle")
 
 // Require all models
 const db = require("./models");
@@ -43,7 +43,6 @@ mongoose.connect("mongodb://localhost/nytscraper")
 
 //using the routes
 app.use('/', index);
-
 
 // Start the server
 app.listen(PORT, function() {

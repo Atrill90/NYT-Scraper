@@ -1,13 +1,26 @@
-
+{{!--
 {{#each articles}}
         <div class="row">
         <div class="articles">
             <a href="{{link}}">{{title}}</a>
             <p>{{summary}}</p>
+            <a class="btn btn-primary"href="/save-article?title={{title}}&link={{link}}&summary={{summary}}">Save this shit</a>
         </div>
         <div class="notes"></div>
         </div>
-    {{/each}}
-    
+    {{/each}} --}}
 
 
+
+    {{#each articles}}
+<div class="row justify-content-center">
+<div class="card" style="width: 36rem;">
+  <div class="card-body articles">
+    <a href= "{{link}}">{{title}}</a>
+    <p class="card-text">{{summary}}</p>
+    <hr>
+   <button class="btn btn-dark saveMe" id="{{_id}}">Save this article</button>
+  </div>
+</div>
+</div>
+{{/each}}

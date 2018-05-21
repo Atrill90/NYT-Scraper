@@ -1,0 +1,13 @@
+    {{#each articles}}
+<div class="row justify-content-center">
+<div class="card" style="width: 36rem;">
+  <div class="card-body articles">
+    <a href= "{{link}}">{{title}}</a>
+    <p class="card-text">{{summary}}</p>
+    <hr>
+   <button class="btn btn-warning deleteThis" id="{{_id}}">Delete this article</button>
+   <button class="btn btn-info deleteThis" id="{{_id}}">Add a Note</button>
+  </div>
+</div>
+</div>
+{{/each}}
