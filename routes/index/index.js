@@ -11,4 +11,8 @@ router.post("/save/:id", indexController.saveMe);
 
 router.get("/saved-articles",indexController.showMe)
 
+router.post("/delete/:id", indexController.deleteMe);
+
+
+
 module.exports = router;

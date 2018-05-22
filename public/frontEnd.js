@@ -7,7 +7,19 @@ $(".saveMe").on("click",function(){
         type: 'POST',
         url: '/save/' +id
     }).done(function(data){
-    console.log("article saved");
+    console.log("article saved")
     
+    })
+});
+$(".deleteThis").on("click",function(){
+    let id = this.id;
+
+    
+    $.ajax({
+        type: 'POST',
+        url: '/delete/'+id 
+    }).done(function(data){
+    console.log("article delete");
+    location.reload();
     })
 });

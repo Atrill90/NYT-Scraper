@@ -45,8 +45,9 @@ module.exports = {
         });
     },
     deleteMe: (req, res) =>{
-        db.Article.findOneAndUpdate({_id:id}, {saved:false}).then(article =>{
+        db.Article.findOneAndUpdate({_id:req.params.id}, {saved:false}).then(article =>{
             res.sendStatus(200);
+           
         })
     }
 };
