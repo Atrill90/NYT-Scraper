@@ -14,7 +14,9 @@
 
     {{#each articles}}
 <div class="row justify-content-center">
-<div class="card" style="width: 36rem;">
+<div class="card">
+    {{!-- fix the image add colums --}}
+    <img class="card-img-top" src="{{img}}" alt="Card image cap">
   <div class="card-body articles">
     <a href= "{{link}}">{{title}}</a>
     <p class="card-text">{{summary}}</p>

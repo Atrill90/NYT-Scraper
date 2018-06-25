@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const exphbs = require('express-handlebars');
+const morgan = require('morgan');
 // Our scraping tools
 // Axios is a promised-based http library, similar to jQuery's Ajax method
 // It works on the client and on the server
@@ -11,7 +12,7 @@ const cheerio = require("cheerio");
 
 //Require routes
 const index = require("./routes/index/index");
-const getArticle = require("./routes/getArticle")
+const getArticle = require("./routes/getArticle");
 
 // Require all models
 const db = require("./models");
@@ -55,3 +56,11 @@ app.use('/', index);
 app.listen(PORT, function() {
     console.log("App running on port " + PORT + "!");
   });
+
+  // I ended up having more issues with this assignment than I thought I would and ended up not completely finishing.
+  // I struggled alot with the folder structure as well as some of the more basic parts including routes and controllers.
+  // Pseudo coding the note I would have had to use populate to associate the user's note with the article. 
+
+
+
+
